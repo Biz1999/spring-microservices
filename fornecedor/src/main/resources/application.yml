@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: 'fornecedor'
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://motty.db.elephantsql.com:5432/meeqvwap
+    platform: postgres
+    username: meeqvwap
+    password: EEoQ1wgknOsMEFJhS9PtjYDFzRTwlAhw
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
