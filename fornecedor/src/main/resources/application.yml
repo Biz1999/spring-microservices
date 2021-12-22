@@ -1,18 +1,11 @@
 server:
   port: 8081
-
 spring:
   application:
     name: 'fornecedor'
-  jpa:
-    database: POSTGRESQL
-    show-sql: true
-  datasource:
-    driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://motty.db.elephantsql.com:5432/meeqvwap
-    platform: postgres
-    username: meeqvwap
-    password: EEoQ1wgknOsMEFJhS9PtjYDFzRTwlAhw
+  config:
+    import: optional:configserver:http://localhost:8888
+
 eureka:
   client:
     register-with-eureka: true

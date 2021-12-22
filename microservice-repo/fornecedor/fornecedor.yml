@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://motty.db.elephantsql.com:5432/meeqvwap
+    platform: postgres
+    username: meeqvwap
+    password: EEoQ1wgknOsMEFJhS9PtjYDFzRTwlAhw
